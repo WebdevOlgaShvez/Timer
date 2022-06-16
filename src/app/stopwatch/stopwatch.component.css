@@ -1,0 +1,26 @@
+.box{
+  width: 800px;
+  height: 300px;
+  background: blueviolet;
+  margin: 0 auto;
+  font-size: 24px;
+  color: #fff;
+}
+button {
+  width: 100px;
+  margin: 10px 20px;
+  padding: 10px;
+}
+
+h2{
+text-align: center;
+}
+
+.timer{
+text-align: center;
+}
+.center{
+  display: flex;
+  justify-content: center;
+
+}

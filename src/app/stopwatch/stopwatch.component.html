@@ -1,0 +1,15 @@
+<div class="box">
+  <h2>Stopwatch</h2>
+  <div class="timer">
+    {{stopwatch.minutes}} <span>m</span>  {{stopwatch.seconds}} <span>s</span>
+  </div>
+  <div class="center">
+    <button (click)="startCount()" *ngIf="startBtn">Start</button>
+  </div>
+  <div *ngIf="!startBtn" class="center">
+    <button (click)="stopTimer()">Stop</button>
+    <button (click)="dbClickCheck()" #dbClick>Wait</button>
+    <button (click)="resetTimer()">Reset</button>
+  </div>
+
+</div>
