@@ -52,7 +52,7 @@ export class StopwatchComponent implements OnDestroy {
     let lastClicked = 0;
     this.subscriptionsDbClick = fromEvent(this.dbClick.nativeElement, 'click').pipe(take(2), tap(v => {
       const timeNow = new Date().getTime();
-      if (timeNow < (lastClicked + 500)) this.waitTimer();
+      if (timeNow > (lastClicked + 500)) this.waitTimer();
       lastClicked = timeNow;
     })).subscribe();
   }
